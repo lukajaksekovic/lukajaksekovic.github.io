@@ -1,0 +1,110 @@
+body{
+    margin:0;
+    padding:0;
+    font-family: 'Source Sans Pro';
+    line-height: 1.5em;
+}
+
+
+#site_wrap{
+    background: linear-gradient(#225881, #dcdfe4);
+    height:100vh;
+    display:grid;
+    grid-template-columns:
+        1fr 
+        369px
+        369px
+        1fr
+    ;
+    grid-gap: 0px;
+    grid-template-rows: 
+    200px
+    125px
+    438px
+    50px
+    1fr  
+    ;
+    grid-template-areas:
+    "gornji gornji gornji gornji"
+    ". naslov naslov ."
+    "srednji srednji srednji srednji"
+    ". login sign_up ."
+    "footer footer footer footer"
+}
+
+
+
+.gornji{
+    background: transparent;
+    grid-area: gornji;
+}
+
+.naslov{
+    background: transparent;
+    grid-area: naslov;
+    
+}
+.naslov h1{
+    color: white;
+    font-size: 50;
+    font-weight: bold;
+    letter-spacing: 5px;
+    line-height: 21%;
+    display: flex;
+    justify-content: center;
+    align-items: center;   
+}
+
+.naslov p{
+    color: rgba(0,0,0,0.5);
+    font-size: 20;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.srednji{
+    background: transparent;
+    grid-area: srednji;
+}
+
+.login{
+    
+    grid-area: login;
+}
+.btn1{
+     text-decoration: none;
+     background-color: rgba(74,99,149,0.5);
+     border: 1px solid black;
+     border-radius: 10px;
+     color: white;
+     padding: 10px 60px;
+    float: right;
+    margin-right: 10px;   
+}
+
+.sign_up{
+    
+    grid-area: sign_up;
+}
+.btn2{
+     text-decoration: none;
+     border: 1px solid black;
+     border-radius: 10px;
+     color: black;
+     padding: 10px 60px;
+     float: left;
+     margin-left: 10px;
+}
+
+.footer{
+    background: transparent;
+    grid-area: footer;
+}
+
+
+
+
+
+
+
